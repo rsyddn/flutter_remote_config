@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 class HomeController extends GetxController {
   @override
   void onInit() {
-    // TODO: implement onInit
     RemoteConfigService.init();
     RemoteConfigService.onAppConfigChanged = () {
       appConfig.value = RemoteConfigService.appConfig;

@@ -21,9 +21,6 @@ class Home extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Center(
-                  child: Text("Jesss"),
-                ),
                 ReWelcomeWidget(),
               ],
             ),

@@ -9,16 +9,17 @@ class ReWelcomeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<HomeController>(
-        init: appController,
-        builder: (viewController) {
-          return Card(
-            color: Colors.black12,
-            elevation: 0,
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Text(viewController.appConfig.value?.name ?? ""),
-            ),
-          );
-        });
+      init: appController,
+      builder: (viewController) {
+        return Card(
+          color: Colors.black12,
+          elevation: 0,
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Text(viewController.appConfig.value?.name ?? ""),
+          ),
+        );
+      },
+    );
   }
 }
